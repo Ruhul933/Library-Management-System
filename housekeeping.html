@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .logout-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Library Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Chart</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section">
+            <h2>Housekeeping</h2>
+            <div class="buttons-container">
+                <button class="button">Housekeeping Add</button>
+                <button class="button">Housekeeping Update</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Membership</h2>
+            <div class="buttons-container">
+                <button class="button">Membership Add</button>
+                <button class="button">Membership Update</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Books/Movies</h2>
+            <div class="buttons-container">
+                <button class="button">Books/Movies Add</button>
+                <button class="button">Books/Movies Update</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>User Management</h2>
+            <div class="buttons-container">
+                <button class="button">User Management Add</button>
+                <button class="button">User Management Update</button>
+            </div>
+        </section>
+
+        <footer>
+            <button class="logout-btn">Log Out</button>
+        </footer>
+    </div>
+</body>
+</html>
