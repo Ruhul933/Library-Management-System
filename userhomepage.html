@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: #4CAF50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .product-details {
+            margin-top: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .product-details table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        .product-details th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        .product-details th {
+            background-color: #f2f2f2;
+        }
+
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .logout-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .logout-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Chart</a></li>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Back</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Transactions</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="product-details">
+            <h2>Product Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code No From</th>
+                        <th>Code No To</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SC(B/M)000001</td>
+                        <td>SC(B/M)000004</td>
+                        <td>Science</td>
+                    </tr>
+                    <tr>
+                        <td>EC(B/M)000001</td>
+                        <td>EC(B/M)000004</td>
+                        <td>Economics</td>
+                    </tr>
+                    <tr>
+                        <td>FC(B/M)000001</td>
+                        <td>FC(B/M)000004</td>
+                        <td>Fiction</td>
+                    </tr>
+                    <tr>
+                        <td>CH(B/M)000001</td>
+                        <td>CH(B/M)000004</td>
+                        <td>Children</td>
+                    </tr>
+                    <tr>
+                        <td>PD(B/M)000001</td>
+                        <td>PD(B/M)000004</td>
+                        <td>Personal Development</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <button class="logout-btn">Log Out</button>
+        </footer>
+    </div>
+</body>
+</html>
